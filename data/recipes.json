@@ -1,0 +1,252 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Fluffy Banana Oat Pancakes",
+      "slug": "fluffy-banana-oat-pancakes",
+      "category": "breakfast",
+      "description": "Naturally sweet pancakes made with ripe bananas and soothing oats—perfect for a gentle morning start.",
+      "image": "images/recipes/banana-oat-pancakes.jpg",
+      "prepTime": "10 minutes",
+      "cookTime": "15 minutes",
+      "servings": 4,
+      "tags": ["Low Acid", "Quick", "Vegan"],
+      "ingredients": [
+        "2 ripe bananas, mashed",
+        "2 cups rolled oats",
+        "1 cup almond milk (or any non-dairy milk)",
+        "2 tablespoons maple syrup",
+        "1 teaspoon baking powder",
+        "1/2 teaspoon cinnamon",
+        "1/4 teaspoon salt",
+        "1 teaspoon vanilla extract"
+      ],
+      "instructions": [
+        "Blend oats in a blender until they form a flour-like consistency.",
+        "Add mashed bananas, almond milk, maple syrup, baking powder, cinnamon, salt, and vanilla to the blender.",
+        "Blend until smooth and well combined.",
+        "Heat a non-stick pan over medium heat and lightly oil if needed.",
+        "Pour 1/4 cup of batter for each pancake.",
+        "Cook for 2-3 minutes until bubbles form on the surface, then flip.",
+        "Cook for another 2 minutes until golden brown.",
+        "Serve warm with fresh berries or a drizzle of maple syrup."
+      ],
+      "notes": "These pancakes are naturally low in acid and gentle on the stomach. Avoid adding citrus fruits as toppings.",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Ginger Chicken with Rice",
+      "slug": "ginger-chicken-rice",
+      "category": "dinner",
+      "description": "Tender chicken infused with gentle ginger and served with fluffy rice—comforting without the reflux.",
+      "image": "images/recipes/ginger-chicken-rice.jpg",
+      "prepTime": "15 minutes",
+      "cookTime": "25 minutes",
+      "servings": 4,
+      "tags": ["Low Acid", "Gluten-Free"],
+      "ingredients": [
+        "4 boneless, skinless chicken breasts",
+        "2 tablespoons fresh ginger, grated",
+        "2 tablespoons olive oil",
+        "1/2 cup low-sodium chicken broth",
+        "2 cups jasmine rice",
+        "4 cups water",
+        "1 teaspoon salt",
+        "Fresh parsley for garnish"
+      ],
+      "instructions": [
+        "Rinse rice thoroughly and cook according to package directions.",
+        "Season chicken breasts lightly with salt.",
+        "Heat olive oil in a large skillet over medium heat.",
+        "Add grated ginger and sauté for 30 seconds until fragrant.",
+        "Add chicken breasts and cook for 6-7 minutes on each side until golden and cooked through.",
+        "Add chicken broth and simmer for 3-4 minutes.",
+        "Serve chicken over rice, drizzle with pan sauce, and garnish with parsley."
+      ],
+      "notes": "Ginger is known to help with digestion. This mild preparation avoids acidic ingredients like tomatoes or citrus.",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Soothing Melon Smoothie",
+      "slug": "soothing-melon-smoothie",
+      "category": "snacks",
+      "description": "Refreshing blend of melon and banana—a cooling drink that's easy on your digestive system and delicious.",
+      "image": "images/recipes/soothing-melon-smoothie.jpg",
+      "prepTime": "5 minutes",
+      "cookTime": "0 minutes",
+      "servings": 2,
+      "tags": ["Low Acid", "Quick", "Vegan", "Gluten-Free"],
+      "ingredients": [
+        "2 cups honeydew melon, cubed",
+        "1 ripe banana",
+        "1/2 cup coconut water",
+        "1/4 cup coconut yogurt (optional)",
+        "1 teaspoon honey (optional)",
+        "Ice cubes"
+      ],
+      "instructions": [
+        "Add melon cubes, banana, coconut water, and coconut yogurt to a blender.",
+        "Blend on high speed until smooth and creamy.",
+        "Add ice cubes and blend again until desired consistency.",
+        "Taste and add honey if you prefer extra sweetness.",
+        "Pour into glasses and serve immediately."
+      ],
+      "notes": "Melons are low in acid and very soothing. This smoothie is perfect for hot days or as a light snack.",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Herb-Roasted Sweet Potato",
+      "slug": "herb-roasted-sweet-potato",
+      "category": "dinner",
+      "description": "Simple roasted sweet potato with calming herbs—naturally sweet and satisfying.",
+      "image": "images/recipes/baked-sweet-potato.jpg",
+      "prepTime": "10 minutes",
+      "cookTime": "40 minutes",
+      "servings": 4,
+      "tags": ["Low Acid", "Vegan", "Gluten-Free"],
+      "ingredients": [
+        "4 medium sweet potatoes",
+        "2 tablespoons olive oil",
+        "1 teaspoon dried rosemary",
+        "1 teaspoon dried thyme",
+        "1/2 teaspoon salt",
+        "Fresh herbs for garnish"
+      ],
+      "instructions": [
+        "Preheat oven to 400°F (200°C).",
+        "Wash and dry sweet potatoes, then cut into 1-inch cubes.",
+        "Toss sweet potato cubes with olive oil, rosemary, thyme, and salt.",
+        "Spread on a baking sheet in a single layer.",
+        "Roast for 35-40 minutes, flipping halfway through, until tender and golden.",
+        "Garnish with fresh herbs and serve warm."
+      ],
+      "notes": "Sweet potatoes are alkaline and very gentle on the stomach.",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Calming Chamomile Blend",
+      "slug": "calming-chamomile-blend",
+      "category": "drinks",
+      "description": "A gentle herbal tea blend to soothe your stomach and relax your mind.",
+      "image": "images/recipes/chamomile-tea.jpg",
+      "prepTime": "2 minutes",
+      "cookTime": "5 minutes",
+      "servings": 1,
+      "tags": ["Low Acid", "Quick", "Vegan", "Gluten-Free"],
+      "ingredients": [
+        "1 chamomile tea bag",
+        "1 cup hot water (not boiling)",
+        "1 teaspoon honey (optional)",
+        "Fresh mint leaves (optional)"
+      ],
+      "instructions": [
+        "Heat water to about 200°F (just below boiling).",
+        "Place chamomile tea bag in a cup.",
+        "Pour hot water over the tea bag.",
+        "Steep for 5 minutes.",
+        "Remove tea bag and add honey and mint if desired.",
+        "Sip slowly while warm."
+      ],
+      "notes": "Chamomile is known for its calming properties and is gentle on the digestive system.",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Gentle Zucchini Noodles",
+      "slug": "gentle-zucchini-noodles",
+      "category": "lunch",
+      "description": "Light veggie noodles with mild herbs—a fresh, low-acid pasta alternative.",
+      "image": "images/recipes/zucchini-noodles.jpg",
+      "prepTime": "15 minutes",
+      "cookTime": "5 minutes",
+      "servings": 2,
+      "tags": ["Low Acid", "Vegan", "Gluten-Free", "Quick"],
+      "ingredients": [
+        "3 medium zucchini",
+        "2 tablespoons olive oil",
+        "2 cloves garlic, minced",
+        "1/4 cup fresh basil, chopped",
+        "Salt to taste",
+        "Nutritional yeast (optional)"
+      ],
+      "instructions": [
+        "Spiralize zucchini into noodle shapes using a spiralizer.",
+        "Heat olive oil in a large pan over medium heat.",
+        "Add minced garlic and sauté for 1 minute.",
+        "Add zucchini noodles and toss for 2-3 minutes until just tender.",
+        "Remove from heat and stir in fresh basil.",
+        "Season with salt and sprinkle with nutritional yeast if desired.",
+        "Serve immediately."
+      ],
+      "notes": "Zucchini is very low in acid. Avoid adding tomato sauce; use olive oil and herbs instead.",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "Creamy Coconut Rice",
+      "slug": "creamy-coconut-rice",
+      "category": "dinner",
+      "description": "Smooth coconut-infused rice that's gentle on digestion and rich in flavor.",
+      "image": "images/recipes/coconut-rice.jpg",
+      "prepTime": "5 minutes",
+      "cookTime": "20 minutes",
+      "servings": 4,
+      "tags": ["Low Acid", "Vegan", "Gluten-Free"],
+      "ingredients": [
+        "2 cups jasmine rice",
+        "1 can (14 oz) coconut milk",
+        "1.5 cups water",
+        "1 teaspoon salt",
+        "1 tablespoon coconut sugar",
+        "Fresh cilantro for garnish"
+      ],
+      "instructions": [
+        "Rinse rice thoroughly under cold water.",
+        "In a medium pot, combine rice, coconut milk, water, salt, and coconut sugar.",
+        "Bring to a boil over high heat.",
+        "Reduce heat to low, cover, and simmer for 18-20 minutes.",
+        "Remove from heat and let sit covered for 5 minutes.",
+        "Fluff with a fork and garnish with cilantro.",
+        "Serve warm as a side dish."
+      ],
+      "notes": "Coconut milk adds creaminess without dairy, making this dish gentle and satisfying.",
+      "featured": false
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "5 Ways to Prevent Reflux at Night",
+      "slug": "prevent-reflux-at-night",
+      "category": "tips",
+      "description": "Discover simple bedtime habits and dietary adjustments to help you sleep peacefully without nighttime reflux discomfort.",
+      "image": "images/articles/night-reflux.jpg",
+      "readTime": "5 min read",
+      "publishDate": "2025-11-01"
+    },
+    {
+      "id": 2,
+      "title": "Foods That Calm Acidity",
+      "slug": "foods-that-calm-acidity",
+      "category": "nutrition",
+      "description": "Learn which everyday foods naturally soothe your stomach and reduce acid production for lasting digestive comfort.",
+      "image": "images/articles/calming-foods.jpg",
+      "readTime": "7 min read",
+      "publishDate": "2025-10-28"
+    },
+    {
+      "id": 3,
+      "title": "Reflux-Friendly Cooking Substitutions",
+      "slug": "cooking-substitutions",
+      "category": "cooking",
+      "description": "Master simple ingredient swaps that let you enjoy your favorite dishes while keeping reflux symptoms at bay.",
+      "image": "images/articles/cooking-substitutions.jpg",
+      "readTime": "6 min read",
+      "publishDate": "2025-10-25"
+    }
+  ]
+}

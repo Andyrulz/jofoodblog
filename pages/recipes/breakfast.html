@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Recipes | Gentle Eating</title>
+    <meta name="description" content="Start your day gently with our GERD-friendly breakfast recipes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/hero.css">
+    <link rel="stylesheet" href="../../css/meal-types.css">
+    <link rel="stylesheet" href="../../css/recipes.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="../../index.html" class="nav__logo">🥗 Gentle Eating</a>
+            </div>
+            <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="nav__toggle-icon"></span>
+            </button>
+            <ul class="nav__menu">
+                <li class="nav__item"><a href="../../index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="../recipes.html" class="nav__link nav__link--active">Recipes</a></li>
+                <li class="nav__item"><a href="../blog.html" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="../resources.html" class="nav__link">Resources</a></li>
+                <li class="nav__item"><a href="../about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="../contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Category Header -->
+        <section class="section section--beige" style="padding: 3rem 0;">
+            <div class="container">
+                <h1 class="section__title text-center">Breakfast Recipes</h1>
+                <p class="section__subtitle text-center">Start your day gently with these comforting, low-acid breakfast ideas</p>
+            </div>
+        </section>
+
+        <!-- Recipe Grid -->
+        <section class="section">
+            <div class="container">
+                <div class="recipes__grid grid grid--3-cols">
+                    
+                    <!-- Recipe Card 1 -->
+                    <article class="recipe-card card">
+                        <a href="../recipe-detail.html?id=1" class="recipe-card__link">
+                            <div class="recipe-card__image-wrapper">
+                                <img src="../../images/recipes/banana-oat-pancakes.jpg" 
+                                     alt="Stack of fluffy banana oat pancakes" 
+                                     class="card__image"
+                                     loading="lazy"
+                                     width="600"
+                                     height="338">
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Fluffy Banana Oat Pancakes</h3>
+                                <p class="card__description">
+                                    Naturally sweet pancakes made with ripe bananas and soothing oats—perfect for a gentle morning start.
+                                </p>
+                                <div class="recipe-card__tags">
+                                    <span class="tag tag--low-acid">Low Acid</span>
+                                    <span class="tag tag--quick">Quick</span>
+                                    <span class="tag tag--vegan">Vegan</span>
+                                </div>
+                                <span class="btn btn--primary recipe-card__cta">View Recipe</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Placeholder Message -->
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 2rem; background-color: var(--color-pale-gray); border-radius: var(--radius-lg); margin-top: 2rem;">
+                        <h3>More Breakfast Recipes Coming Soon!</h3>
+                        <p style="margin-top: 1rem; color: var(--color-text-secondary);">
+                            We're working on adding more delicious, GERD-friendly breakfast recipes. Check back soon or subscribe to our newsletter to be notified when new recipes are published.
+                        </p>
+                        <a href="../../index.html#newsletter" class="btn btn--primary" style="margin-top: 1.5rem;">Subscribe to Newsletter</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to All Categories -->
+        <section class="section section--pale-green">
+            <div class="container text-center">
+                <h2 class="section__title">Explore More Meal Types</h2>
+                <div class="meal-types__grid" style="margin-top: 2rem;">
+                    <article class="meal-card">
+                        <a href="lunch.html" class="meal-card__link">
+                            <div class="meal-card__image-wrapper">
+                                <img src="../../images/meal-types/lunch.jpg" alt="Lunch recipes" class="meal-card__image" loading="lazy" width="600" height="400">
+                            </div>
+                            <div class="meal-card__content">
+                                <h3 class="meal-card__title">Lunch</h3>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="meal-card">
+                        <a href="dinner.html" class="meal-card__link">
+                            <div class="meal-card__image-wrapper">
+                                <img src="../../images/meal-types/dinner.jpg" alt="Dinner recipes" class="meal-card__image" loading="lazy" width="600" height="400">
+                            </div>
+                            <div class="meal-card__content">
+                                <h3 class="meal-card__title">Dinner</h3>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="meal-card">
+                        <a href="snacks.html" class="meal-card__link">
+                            <div class="meal-card__image-wrapper">
+                                <img src="../../images/meal-types/snacks.jpg" alt="Snack recipes" class="meal-card__image" loading="lazy" width="600" height="400">
+                            </div>
+                            <div class="meal-card__content">
+                                <h3 class="meal-card__title">Snacks</h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© 2025 Gentle Eating. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
