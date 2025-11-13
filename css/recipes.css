@@ -76,7 +76,7 @@
 }
 
 .recipe-card__description {
-    font-size: var(--font-size-body);
+    font-size: 0.875rem;
     color: var(--color-text-secondary);
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--spacing-md);

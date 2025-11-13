@@ -24,7 +24,7 @@
     --color-off-white: #fafaf8;
     --color-beige: #f7f3ee;
     --color-pale-gray: #f5f5f3;
-    --color-pale-green: #f0f4f0;
+    --color-pale-green: #e8f0e8;     /* More visible pale green/olive */
     --color-dark-gray: #2d2d2d;
     
     /* Text Colors */
@@ -352,6 +352,12 @@ select:focus {
     background-color: #f0f4f0;
     color: #5a6b59;
     border: 1px solid #8b9d8a;
+}
+
+.tag--satiating {
+    background-color: #fef5e7;
+    color: #8b6914;
+    border: 1px solid #d4a574;
 }
 
 /* ========================================

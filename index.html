@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/announcement-bar.css">
     <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/recipe-search.css">
     <link rel="stylesheet" href="css/meal-types.css">
     <link rel="stylesheet" href="css/recipes.css">
     <link rel="stylesheet" href="css/articles.css">
@@ -104,17 +105,42 @@
         <section class="hero" role="region" aria-label="Hero banner">
             <div class="container">
                 <div class="hero__content">
-                    <p class="hero__tagline">Gentle Recipes Made For</p>
-                    <h1 class="hero__title">comfort, healing, everyday wellness.</h1>
-                    <p class="hero__subtitle">Delicious, GERD-friendly recipes that help you eat well and feel better.</p>
+                    <h1 class="hero__title">Eat Well, Feel Better<br><span class="hero__title-secondary">Your Complete Acid Reflux & GERD Diet Resource</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Search Section -->
+        <section class="recipe-search section" role="search" aria-label="Recipe search">
+            <div class="container">
+                <div class="recipe-search__wrapper">
+                    <div class="recipe-search__container">
+                        <form class="recipe-search__form" role="search" aria-label="Search recipes">
+                            <div class="recipe-search__input-wrapper">
+                                <svg class="recipe-search__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <input type="search" 
+                                       id="recipe-search" 
+                                       name="search" 
+                                       class="recipe-search__input" 
+                                       placeholder="Search our recipes (Eg: Pancakes, Chicken, Breakfast recipes, etc)" 
+                                       aria-label="Search recipes"
+                                       autocomplete="off">
+                            </div>
+                        </form>
+                        <span class="recipe-search__divider">or</span>
+                        <a href="pages/recipes.html" class="recipe-search__view-all">+ VIEW ALL RECIPES</a>
+                    </div>
+                    <p class="recipe-search__subtitle">After years of battling reflux, I discovered that healing food can still taste amazing. Explore gentle, flavorful GERD-friendly recipes that bring comfort back to your plate</p>
                 </div>
             </div>
         </section>
 
         <!-- Meal Types Section -->
-        <section id="meal-types" class="meal-types section section--pale-gray" role="region" aria-labelledby="meal-types-title">
+        <section id="meal-types" class="meal-types section section--pale-green" role="region" aria-labelledby="meal-types-title">
             <div class="container">
-                <h2 id="meal-types-title" class="section__title text-center">Explore by Meal Type</h2>
+                <h2 id="meal-types-title" class="section__title text-center">Explore Reflux-Friendly Recipes by Meal Type</h2>
                 <p class="section__subtitle text-center">Find the perfect recipe for any time of day</p>
                 
                 <div class="meal-types__grid">
@@ -131,7 +157,7 @@
                             </div>
                             <div class="meal-card__content">
                                 <h3 class="meal-card__title">Breakfast</h3>
-                                <p class="meal-card__description">Start your day gently.</p>
+                                <p class="meal-card__description">Gentle, low-acid breakfast recipes from creamy oats to calming smoothies - the perfect start to your day.</p>
                             </div>
                         </a>
                     </article>
@@ -149,7 +175,7 @@
                             </div>
                             <div class="meal-card__content">
                                 <h3 class="meal-card__title">Lunch</h3>
-                                <p class="meal-card__description">Light meals that satisfy.</p>
+                                <p class="meal-card__description">Light and nourishing GERD-friendly lunches from soothing grain bowls to grilled veggies, and lean proteins.</p>
                             </div>
                         </a>
                     </article>
@@ -167,7 +193,7 @@
                             </div>
                             <div class="meal-card__content">
                                 <h3 class="meal-card__title">Dinner</h3>
-                                <p class="meal-card__description">Comforting meals for restful nights.</p>
+                                <p class="meal-card__description">Acid reflux-safe dinners that relax your stomach balancing flavor and comfort, ensuring a peaceful night's rest.</p>
                             </div>
                         </a>
                     </article>
@@ -185,7 +211,7 @@
                             </div>
                             <div class="meal-card__content">
                                 <h3 class="meal-card__title">Snacks</h3>
-                                <p class="meal-card__description">Gentle bites between meals.</p>
+                                <p class="meal-card__description">Gentle bites between meals or before bed that calm your system and support digestive comfort.</p>
                             </div>
                         </a>
                     </article>
@@ -203,7 +229,7 @@
                             </div>
                             <div class="meal-card__content">
                                 <h3 class="meal-card__title">Desserts</h3>
-                                <p class="meal-card__description">Sweet treats without the burn.</p>
+                                <p class="meal-card__description">Enjoy sweet treats without the burn. Guilt-free comfort in every bite.</p>
                             </div>
                         </a>
                     </article>
@@ -221,7 +247,7 @@
                             </div>
                             <div class="meal-card__content">
                                 <h3 class="meal-card__title">Soups & Drinks</h3>
-                                <p class="meal-card__description">Warm and soothing comfort.</p>
+                                <p class="meal-card__description">Soothing soups and low-acid drinks that hydrate and heal - from chamomile blends to light veggie broths.</p>
                             </div>
                         </a>
                     </article>
@@ -232,7 +258,7 @@
         <!-- Featured Recipes Section -->
         <section class="featured-recipes section" role="region" aria-labelledby="featured-recipes-title">
             <div class="container">
-                <h2 id="featured-recipes-title" class="section__title text-center">Featured Recipes</h2>
+                <h2 id="featured-recipes-title" class="section__title text-center">Featured Acid Reflux Diet Recipes</h2>
                 <p class="section__subtitle text-center">Our most popular GERD-friendly dishes</p>
                 
                 <div class="recipes__grid grid grid--3-cols">
@@ -251,7 +277,7 @@
                             <div class="recipe-card__content">
                                 <h3 class="recipe-card__title" itemprop="name">Fluffy Banana Oat Pancakes</h3>
                                 <p class="recipe-card__description" itemprop="description">
-                                    Naturally sweet pancakes made with ripe bananas and soothing oats—perfect for a gentle morning start.
+                                    Naturally sweet pancakes made with ripe bananas and soothing oats, for a GERD-friendly breakfast
                                 </p>
                                 <div class="recipe-card__tags">
                                     <span class="tag tag--low-acid">Low Acid</span>
@@ -278,11 +304,12 @@
                             <div class="recipe-card__content">
                                 <h3 class="recipe-card__title" itemprop="name">Ginger Chicken with Rice</h3>
                                 <p class="recipe-card__description" itemprop="description">
-                                    Tender chicken infused with gentle ginger and served with fluffy rice—comforting without the reflux.
+                                    Tender chicken infused with gentle ginger and served with fluffy rice. Comforting without the reflux
                                 </p>
                                 <div class="recipe-card__tags">
                                     <span class="tag tag--low-acid">Low Acid</span>
                                     <span class="tag tag--gluten-free">Gluten-Free</span>
+                                    <span class="tag tag--satiating">Satiating</span>
                                 </div>
                                 <span class="btn btn--primary recipe-card__cta" role="button">View Recipe</span>
                             </div>
@@ -304,7 +331,7 @@
                             <div class="recipe-card__content">
                                 <h3 class="recipe-card__title" itemprop="name">Soothing Melon Smoothie</h3>
                                 <p class="recipe-card__description" itemprop="description">
-                                    Refreshing blend of melon and banana—a cooling drink that's easy on your digestive system and delicious.
+                                    Refreshing blend of melon and banana, a cooling drink that's easy on your digestive system and delicious.
                                 </p>
                                 <div class="recipe-card__tags">
                                     <span class="tag tag--low-acid">Low Acid</span>
@@ -324,7 +351,7 @@
         <section class="recent-recipes section section--pale-green" role="region" aria-labelledby="recent-recipes-title">
             <div class="container">
                 <h2 id="recent-recipes-title" class="section__title text-center">Fresh from the Kitchen</h2>
-                <p class="section__subtitle text-center">Our latest reflux-friendly creations</p>
+                <p class="section__subtitle text-center">Latest Additions to Your Acid Reflux Diet Recipe Collection</p>
                 
                 <div class="recipes__grid grid grid--4-cols">
                     <!-- Recent Recipe 1 -->
@@ -341,7 +368,7 @@
                             <div class="recipe-card__content">
                                 <h3 class="recipe-card__title">Herb-Roasted Sweet Potato</h3>
                                 <p class="recipe-card__description">
-                                    Simple roasted sweet potato with calming herbs—naturally sweet and satisfying.
+                                    Roasted sweet potato with calming herbs, naturally sweet and satisfying.
                                 </p>
                                 <div class="recipe-card__tags">
                                     <span class="tag tag--low-acid">Low Acid</span>
@@ -436,7 +463,7 @@
         <section class="articles section" role="region" aria-labelledby="articles-title">
             <div class="container">
                 <h2 id="articles-title" class="section__title text-center">Learn to Eat Better</h2>
-                <p class="section__subtitle text-center">Expert tips for managing reflux through diet</p>
+                <p class="section__subtitle text-center">Learn How to Manage GERD Through Food - Expert Acid Reflux Diet Tips & Guides</p>
                 
                 <div class="articles__list">
                     <!-- Article 1 -->
@@ -452,7 +479,7 @@
                                      height="300">
                             </div>
                             <div class="article-card__content">
-                                <h3 class="article-card__title" itemprop="headline">5 Ways to Prevent Reflux at Night</h3>
+                                <h3 class="article-card__title" itemprop="headline">5 Ways to Prevent Nighttime Acid Reflux - Sleep Better with Smart Diet Tweaks</h3>
                                 <p class="article-card__summary" itemprop="description">
                                     Discover simple bedtime habits and dietary adjustments to help you sleep peacefully without nighttime reflux discomfort.
                                 </p>
@@ -537,7 +564,7 @@
                         </svg>
                     </div>
                     <h2 id="newsletter-title" class="newsletter__title text-center">Get Reflux-Friendly Recipes in Your Inbox</h2>
-                    <p class="newsletter__subtitle text-center">Join our free newsletter for gentle meal ideas and expert tips</p>
+                    <p class="newsletter__subtitle text-center">Join 10,000+ readers following the Acid Reflux Diet Newsletter - get free reflux-friendly recipes, expert GERD diet tips, and a 7-Day Meal Plan.</p>
                     
                     <form class="newsletter__form" id="newsletter-form" aria-label="Newsletter signup form" novalidate>
                         <div class="newsletter__form-group">
@@ -649,7 +676,7 @@
 
             <div class="footer__bottom">
                 <p class="footer__disclaimer">
-                    <strong>Medical Disclaimer:</strong> This website provides general information and is not a substitute for professional medical advice. Always consult your doctor before making dietary changes for GERD or acid reflux.
+                    <strong>Medical Disclaimer:</strong> Information on Gentle Eating is for educational purposes about the acid reflux diet and GERD nutrition only. Always consult your healthcare provider
                 </p>
                 <p class="footer__copyright">
                     © 2025 Gentle Eating. All rights reserved.

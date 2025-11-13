@@ -4,7 +4,7 @@
 
 .hero {
     background-color: white;
-    padding: 1.5rem 0 1.5rem;
+    padding: 3rem 0 1rem;
     text-align: center;
 }
 
@@ -28,10 +28,16 @@
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 600;
     color: var(--color-text-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     line-height: 1;
     font-family: 'Dancing Script', 'Brush Script MT', 'Lucida Handwriting', cursive;
     letter-spacing: -0.01em;
+}
+
+.hero__title-secondary {
+    font-size: 0.5em;
+    display: inline-block;
+    margin-top: 0.75rem;
 }
 
 .hero__subtitle {
@@ -227,7 +233,7 @@
 /* Mobile Styles */
 @media (max-width: 767px) {
     .hero {
-        padding: 1.25rem 0 1.25rem;
+        padding: 1.25rem 0 1rem;
     }
     
     .hero__content {
