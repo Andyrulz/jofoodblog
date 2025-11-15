@@ -248,6 +248,70 @@
     }
 
     // ==========================================
+    // FAQ Accordion
+    // ==========================================
+    function initFAQAccordion() {
+        const faqItems = document.querySelectorAll('.faq__item');
+        
+        if (!faqItems.length) return;
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq__question');
+            const answer = item.querySelector('.faq__answer');
+            
+            if (!question || !answer) return;
+            
+            question.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                // Close all other FAQ items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        const otherQuestion = otherItem.querySelector('.faq__question');
+                        const otherAnswer = otherItem.querySelector('.faq__answer');
+                        
+                        if (otherQuestion && otherAnswer) {
+                            otherQuestion.setAttribute('aria-expanded', 'false');
+                            otherItem.classList.remove('faq__item--active');
+                        }
+                    }
+                });
+                
+                // Toggle current FAQ item
+                this.setAttribute('aria-expanded', !isExpanded);
+                item.classList.toggle('faq__item--active');
+                
+                // Smooth scroll to question if opening and not in viewport
+                if (!isExpanded) {
+                    setTimeout(() => {
+                        const rect = item.getBoundingClientRect();
+                        const isVisible = rect.top >= 0 && rect.top <= window.innerHeight * 0.3;
+                        
+                        if (!isVisible) {
+                            const headerOffset = 100;
+                            const elementPosition = item.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                            
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }, 100);
+                }
+            });
+            
+            // Keyboard navigation
+            question.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+    }
+
+    // ==========================================
     // Initialize All Features
     // ==========================================
     function init() {
@@ -264,6 +328,7 @@
         initStickyHeader();
         initBackToTop();
         initFocusManagement();
+        initFAQAccordion();
         
         // Delay scroll animations slightly for better performance
         setTimeout(initScrollAnimations, 100);

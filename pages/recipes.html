@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/hero.css">
     <link rel="stylesheet" href="../css/recipes.css">
+    <link rel="stylesheet" href="../css/recipes-filters.css">
 </head>
 <body>
     <header class="header">
@@ -18,6 +19,9 @@
             <div class="nav__brand">
                 <a href="../index.html" class="nav__logo">🥗 Gentle Eating</a>
             </div>
+            <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="nav__toggle-icon"></span>
+            </button>
             <ul class="nav__menu">
                 <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="recipes.html" class="nav__link nav__link--active">Recipes</a></li>
@@ -30,18 +34,180 @@
     </header>
 
     <main>
-        <section class="section">
+        <!-- Hero Section with Search -->
+        <section class="recipes-hero">
             <div class="container">
-                <h1 class="section__title text-center">All Recipes</h1>
-                <p class="section__subtitle text-center">Delicious, reflux-friendly meals for every occasion</p>
-                
-                <div class="recipes__grid grid grid--3-cols" style="margin-top: 3rem;">
-                    <p style="grid-column: 1 / -1; text-align: center; padding: 4rem 2rem; color: var(--color-text-secondary);">
-                        Recipe listings coming soon! In the meantime, check out our <a href="../index.html#featured-recipes">featured recipes</a> on the homepage.
+                <div class="recipes-hero__content">
+                    <nav class="recipes-hero__breadcrumb">
+                        <a href="../index.html">Gentle Eating</a>
+                        <span>›</span>
+                        <span>Recipes</span>
+                    </nav>
+                    <h1 class="recipes-hero__title">Recipes</h1>
+                    <p class="recipes-hero__description">
+                        We've carefully curated these GERD-friendly recipes to help you enjoy delicious meals without worry. 
+                        Low-acid options, gentle ingredients, and plenty of variety... no matter how you browse, 
+                        you'll find meals that are both safe and satisfying for your reflux journey.
                     </p>
+                    <div class="recipes-hero__search">
+                        <input 
+                            type="text" 
+                            class="recipes-hero__search-input" 
+                            id="recipeSearch" 
+                            placeholder="Search by keyword"
+                            aria-label="Search recipes"
+                        >
+                        <button class="search__clear" id="searchClear" aria-label="Clear search">×</button>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Main Content Area with Sidebar -->
+        <section class="section recipes-section">
+            <div class="container-full">
+                <div class="recipes-layout">
+                    <!-- Main Recipes Area -->
+                    <div class="recipes-main">
+                        <!-- Recipes Grid -->
+                        <div class="recipes__grid grid grid--2-cols" id="recipesGrid">
+                            <!-- Recipe cards will be dynamically inserted here -->
+                        </div>
+
+                        <!-- No Results Message -->
+                        <div class="recipes__no-results" id="noResults" style="display: none;">
+                            <div class="recipes__no-results-icon">😔</div>
+                            <h3 class="recipes__no-results-title">No recipes found</h3>
+                            <p class="recipes__no-results-text">Try adjusting your filters or search terms</p>
+                            <button class="recipes__no-results-button" id="clearAllFilters">Clear All Filters</button>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Filters -->
+                    <aside class="recipes-sidebar" id="filtersSidebar">
+                        <button class="filters__mobile-close" id="filtersMobileClose" aria-label="Close filters" style="display: none;">×</button>
+                        
+                        <div class="sidebar-filters">
+                            <div class="sidebar-filters__header">
+                                <h2 class="sidebar-filters__title">
+                                    <span>Filter By</span>
+                                </h2>
+                                <button class="sidebar-filters__clear" id="sidebarClearAll">Clear All</button>
+                            </div>
+
+                            <!-- Sort -->
+                            <div class="filters__sort-wrapper">
+                                <label class="filters__sort-label" for="sortSelect">Sort by</label>
+                                <select class="filters__sort-select" id="sortSelect">
+                                    <option value="featured">Featured</option>
+                                    <option value="newest">Newest First</option>
+                                    <option value="title-asc">A to Z</option>
+                                    <option value="title-desc">Z to A</option>
+                                    <option value="quick">Quickest First</option>
+                                </select>
+                            </div>
+
+                            <!-- Meal Types -->
+                            <div class="filters__section">
+                                <div class="filters__section-title">Meal Type</div>
+                                <div class="filters__chips" id="mealTypeFilters">
+                                    <button class="filter-chip" data-filter="mealType" data-value="breakfast">
+                                        <span>🍳 Breakfast</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="mealType" data-value="brunch">
+                                        <span>🥐 Brunch</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="mealType" data-value="lunch">
+                                        <span>🥗 Lunch</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="mealType" data-value="dinner">
+                                        <span>🍽️ Dinner</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="mealType" data-value="snacks">
+                                        <span>🍪 Snacks</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="mealType" data-value="drinks">
+                                        <span>☕ Drinks</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="mealType" data-value="side-dish">
+                                        <span>🥘 Sides</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Dietary Tags -->
+                            <div class="filters__section">
+                                <div class="filters__section-title">Dietary</div>
+                                <div class="filters__chips" id="dietaryFilters">
+                                    <button class="filter-chip" data-filter="dietary" data-value="low-acid" data-type="dietary">
+                                        <span>✓ Low Acid</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="dietary" data-value="vegan" data-type="dietary">
+                                        <span>🌱 Vegan</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="dietary" data-value="gluten-free" data-type="dietary">
+                                        <span>🌾 Gluten-Free</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="dietary" data-value="dairy-free" data-type="dietary">
+                                        <span>🥛 Dairy-Free</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Cook Time -->
+                            <div class="filters__section">
+                                <div class="filters__section-title">Prep Time</div>
+                                <div class="filters__chips" id="timeFilters">
+                                    <button class="filter-chip" data-filter="time" data-value="quick" data-type="time">
+                                        <span>⚡ Quick (&lt;30 min)</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="time" data-value="moderate" data-type="time">
+                                        <span>⏱️ Moderate (30-60 min)</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Key Ingredients -->
+                            <div class="filters__section">
+                                <div class="filters__section-title">Key Ingredients</div>
+                                <div class="filters__chips" id="ingredientFilters">
+                                    <button class="filter-chip" data-filter="ingredient" data-value="oats">
+                                        <span>Oats</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="ingredient" data-value="chicken">
+                                        <span>Chicken</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="ingredient" data-value="rice">
+                                        <span>Rice</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="ingredient" data-value="banana">
+                                        <span>Banana</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="ingredient" data-value="sweet-potato">
+                                        <span>Sweet Potato</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="ingredient" data-value="ginger">
+                                        <span>Ginger</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="ingredient" data-value="coconut">
+                                        <span>Coconut</span>
+                                    </button>
+                                    <button class="filter-chip" data-filter="ingredient" data-value="herbs">
+                                        <span>Herbs</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Filter Toggle Button -->
+        <button class="filters__mobile-toggle" id="filtersMobileToggle">
+            <span>⚙️</span>
+            <span>Filters</span>
+        </button>
     </main>
 
     <footer class="footer">
@@ -51,5 +217,7 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/recipes-display.js"></script>
+    <script src="../js/recipes-filter.js"></script>
 </body>
 </html>

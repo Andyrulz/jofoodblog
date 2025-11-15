@@ -1,0 +1,224 @@
+/* ========================================
+   FAQ Section Styles
+   Accordion-style with dropdown arrows
+   ======================================== */
+
+.faq {
+    background-color: var(--color-off-white);
+    padding: 4rem 0;
+}
+
+.faq__container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq__title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+}
+
+.faq__subtitle {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* FAQ List */
+.faq__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq__item {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.faq__item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.faq__item:last-child {
+    margin-bottom: 0;
+}
+
+/* FAQ Question (Button) */
+.faq__question {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-primary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    line-height: 1.5;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.faq__question:hover {
+    color: var(--color-sage);
+}
+
+.faq__question:focus {
+    outline: none;
+}
+
+.faq__question:focus-visible {
+    outline: 2px solid var(--color-sage);
+    outline-offset: -2px;
+}
+
+.faq__question-text {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+/* Dropdown Arrow Icon */
+.faq__icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.faq__icon svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-sage);
+    transition: fill 0.3s ease;
+}
+
+.faq__question:hover .faq__icon svg {
+    fill: var(--color-sage-dark);
+}
+
+/* Rotate arrow when active */
+.faq__item--active .faq__icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* FAQ Answer */
+.faq__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    padding: 0 1.5rem;
+}
+
+.faq__item--active .faq__answer {
+    max-height: 500px;
+    padding: 0 1.5rem 1.5rem;
+    transition: max-height 0.5s ease-in, padding 0.5s ease-in;
+}
+
+.faq__answer-content {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+}
+
+.faq__answer-content p {
+    margin: 0 0 1rem 0;
+}
+
+.faq__answer-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Highlight important terms */
+.faq__answer-content strong {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 768px) {
+    .faq {
+        padding: 3rem 0;
+    }
+    
+    .faq__title {
+        font-size: 2rem;
+    }
+    
+    .faq__subtitle {
+        font-size: 1rem;
+    }
+    
+    .faq__question {
+        font-size: 1rem;
+        padding: 1.25rem 3rem 1.25rem 1.25rem;
+    }
+    
+    .faq__icon {
+        right: 1.25rem;
+    }
+    
+    .faq__answer-content {
+        font-size: 0.9375rem;
+    }
+    
+    .faq__item--active .faq__answer {
+        padding: 0 1.25rem 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq {
+        padding: 2.5rem 0;
+    }
+    
+    .faq__title {
+        font-size: 1.75rem;
+    }
+    
+    .faq__header {
+        margin-bottom: 2rem;
+    }
+    
+    .faq__question {
+        padding: 1rem 2.5rem 1rem 1rem;
+        font-size: 0.9375rem;
+    }
+    
+    .faq__icon {
+        right: 1rem;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .faq__icon svg {
+        width: 16px;
+        height: 16px;
+    }
+}

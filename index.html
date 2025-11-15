@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="css/meal-types.css">
     <link rel="stylesheet" href="css/recipes.css">
     <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/newsletter.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -60,6 +61,72 @@
         "target": "https://yourdomain.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+    
+    <!-- Schema.org FAQPage Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is acid reflux or GERD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Acid reflux happens when stomach acid flows back into the esophagus, causing heartburn or a burning sensation in the chest. GERD (Gastroesophageal Reflux Disease) is a chronic form of acid reflux that occurs frequently and may require long-term lifestyle or dietary adjustments. Following an acid reflux diet - one focused on gentle, low-acid foods - can help manage symptoms naturally."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an acid reflux diet and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An acid reflux diet helps control stomach acid and reduce irritation by emphasizing low-acid, high-fiber, non-spicy meals. It replaces trigger foods with options like oats, bananas, lean proteins, green vegetables, and herbal teas - all of which soothe the digestive tract and promote healing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which foods should I avoid if I have GERD or acid reflux?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Avoid spicy foods, citrus fruits, tomatoes, onions, garlic, chocolate, coffee, alcohol, and fried foods. These tend to relax the lower esophageal sphincter (LES) or increase acid production, worsening reflux symptoms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best foods to eat for acid reflux relief?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best GERD-friendly foods include oatmeal, melons, ginger, chicken, fish, leafy greens, and whole grains. They're gentle on the stomach and help prevent acid flare-ups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does when I eat matter for acid reflux?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Try to eat smaller meals more often and avoid lying down within 2–3 hours after eating. Eating slowly and sitting upright after meals can help reduce symptoms, especially in the evening."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I drink coffee or tea if I have acid reflux?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Caffeine can worsen symptoms for some people. If coffee triggers reflux, try low-acid coffee or switch to herbal teas such as chamomile, ginger, or licorice root. Avoid peppermint tea - it can relax the LES and increase reflux risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How soon can I expect results from an acid reflux diet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most people notice relief within 2 to 4 weeks of following a reflux-friendly diet and healthy habits consistently. For long-term improvement, pair dietary changes with hydration, mindful eating, and proper sleep posture."
+          }
+        }
+      ]
     }
     </script>
 </head>
@@ -105,7 +172,7 @@
         <section class="hero" role="region" aria-label="Hero banner">
             <div class="container">
                 <div class="hero__content">
-                    <h1 class="hero__title">Eat Well, Feel Better<br><span class="hero__title-secondary">Your Complete Acid Reflux & GERD Diet Resource</span></h1>
+                    <h1 class="hero__title">Your Acid Reflux & GERD Recipe Book</h1>
                 </div>
             </div>
         </section>
@@ -131,9 +198,7 @@
                         </form>
                         <span class="recipe-search__divider">or</span>
                         <a href="pages/recipes.html" class="recipe-search__view-all">+ VIEW ALL RECIPES</a>
-                    </div>
-                    <p class="recipe-search__subtitle">After years of battling reflux, I discovered that healing food can still taste amazing. Explore gentle, flavorful GERD-friendly recipes that bring comfort back to your plate</p>
-                </div>
+                    
             </div>
         </section>
 
@@ -535,8 +600,141 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section class="faq section" role="region" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="faq__container">
+                    <div class="faq__header">
+                        <h2 id="faq-title" class="faq__title">Frequently Asked Questions</h2>
+                        <p class="faq__subtitle">Common questions about acid reflux, GERD, and the reflux-friendly diet</p>
+                    </div>
+                    
+                    <ul class="faq__list">
+                        <!-- FAQ Item 1 -->
+                        <li class="faq__item">
+                            <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-1">
+                                <span class="faq__question-text">What is acid reflux or GERD?</span>
+                                <span class="faq__icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq__answer" id="faq-answer-1">
+                                <div class="faq__answer-content">
+                                    <p>Acid reflux happens when stomach acid flows back into the esophagus, causing heartburn or a burning sensation in the chest. <strong>GERD (Gastroesophageal Reflux Disease)</strong> is a chronic form of acid reflux that occurs frequently and may require long-term lifestyle or dietary adjustments. Following an <strong>acid reflux diet</strong> - one focused on gentle, low-acid foods - can help manage symptoms naturally.</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- FAQ Item 2 -->
+                        <li class="faq__item">
+                            <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-2">
+                                <span class="faq__question-text">What is an acid reflux diet and how does it work?</span>
+                                <span class="faq__icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq__answer" id="faq-answer-2">
+                                <div class="faq__answer-content">
+                                    <p>An acid reflux diet helps control stomach acid and reduce irritation by emphasizing <strong>low-acid, high-fiber, non-spicy meals</strong>. It replaces trigger foods with options like oats, bananas, lean proteins, green vegetables, and herbal teas - all of which soothe the digestive tract and promote healing.</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- FAQ Item 3 -->
+                        <li class="faq__item">
+                            <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-3">
+                                <span class="faq__question-text">Which foods should I avoid if I have GERD or acid reflux?</span>
+                                <span class="faq__icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq__answer" id="faq-answer-3">
+                                <div class="faq__answer-content">
+                                    <p>Avoid <strong>spicy foods, citrus fruits, tomatoes, onions, garlic, chocolate, coffee, alcohol, and fried foods</strong>. These tend to relax the lower esophageal sphincter (LES) or increase acid production, worsening reflux symptoms.</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- FAQ Item 4 -->
+                        <li class="faq__item">
+                            <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-4">
+                                <span class="faq__question-text">What are the best foods to eat for acid reflux relief?</span>
+                                <span class="faq__icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq__answer" id="faq-answer-4">
+                                <div class="faq__answer-content">
+                                    <p>The best <strong>GERD-friendly foods</strong> include oatmeal, melons, ginger, chicken, fish, leafy greens, and whole grains. They're gentle on the stomach and help prevent acid flare-ups.</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- FAQ Item 5 -->
+                        <li class="faq__item">
+                            <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-5">
+                                <span class="faq__question-text">Does when I eat matter for acid reflux?</span>
+                                <span class="faq__icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq__answer" id="faq-answer-5">
+                                <div class="faq__answer-content">
+                                    <p>Yes. Try to <strong>eat smaller meals more often</strong> and avoid lying down within 2–3 hours after eating. Eating slowly and sitting upright after meals can help reduce symptoms, especially in the evening.</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- FAQ Item 6 -->
+                        <li class="faq__item">
+                            <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-6">
+                                <span class="faq__question-text">Can I drink coffee or tea if I have acid reflux?</span>
+                                <span class="faq__icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq__answer" id="faq-answer-6">
+                                <div class="faq__answer-content">
+                                    <p>Caffeine can worsen symptoms for some people. If coffee triggers reflux, try <strong>low-acid coffee</strong> or switch to herbal teas such as chamomile, ginger, or licorice root. Avoid peppermint tea - it can relax the LES and increase reflux risk.</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- FAQ Item 7 -->
+                        <li class="faq__item">
+                            <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-7">
+                                <span class="faq__question-text">How soon can I expect results from an acid reflux diet?</span>
+                                <span class="faq__icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq__answer" id="faq-answer-7">
+                                <div class="faq__answer-content">
+                                    <p>Most people notice relief within <strong>2 to 4 weeks</strong> of following a reflux-friendly diet and healthy habits consistently. For long-term improvement, pair dietary changes with hydration, mindful eating, and proper sleep posture.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- About Me Section -->
-        <section class="about section section--beige" role="region" aria-labelledby="about-title">
+        <section class="about section" role="region" aria-labelledby="about-title">
             <div class="container">
                 <div class="about__wrapper">
                     <div class="about__content about__content--full-width">
@@ -555,7 +753,7 @@
         </section>
 
         <!-- Newsletter Signup Section -->
-        <section class="newsletter section section--mint" role="region" aria-labelledby="newsletter-title">
+        <section class="newsletter section section--beige" role="region" aria-labelledby="newsletter-title">
             <div class="container">
                 <div class="newsletter__wrapper">
                     <div class="newsletter__icon" aria-hidden="true">
